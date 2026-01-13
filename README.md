@@ -102,7 +102,7 @@ docker compose version
 
 -  macOS 10.15+ (avec Docker Desktop)
 -  Linux (Ubuntu 20.04+, Debian 10+, etc.)
-- ✅Windows 10/11 (avec Docker Desktop ou WSL2)
+- Windows 10/11 (avec Docker Desktop ou WSL2)
 
 ---
 
@@ -562,13 +562,13 @@ Déclaration du volume nommé pour la persistance des données PostgreSQL.
 ### Gestion des conteneurs
 
 ```bash
-# Arrêter les conteneurs (garder les volumes)
+# Arrêter les conteneurs 
 docker compose stop
 
-# Arrêter et supprimer les conteneurs (garder les volumes)
+# Arrêter et supprimer les conteneurs 
 docker compose down
 
-# Arrêter, supprimer les conteneurs ET les volumes (⚠️ supprime les données)
+# Arrêter, supprimer les conteneurs ET les volumes 
 docker compose down -v
 
 # Redémarrer les services
@@ -632,7 +632,7 @@ docker stats quiz-app-backend-1
 # Supprimer les conteneurs arrêtés
 docker compose rm
 
-# Supprimer les images, conteneurs et volumes non utilisés (⚠️ attention)
+# Supprimer les images, conteneurs et volumes non utilisés
 docker system prune -a --volumes
 
 # Supprimer uniquement les images non utilisées
